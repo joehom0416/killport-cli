@@ -1,5 +1,5 @@
 # Killport CLI
-A Command Line Interface for kill running process which currently using the port.
+A Command Line Interface for kill the running process which currently using the port.
 
 ## Usage
 
