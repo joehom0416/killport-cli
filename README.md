@@ -4,8 +4,9 @@ A Command Line Interface for kill the running process which currently using the 
 ## Usage
 
 ```
-killport [options] (<name>|<path>|<list>)
+killport [-p|--port] (<port number>)
 killport [-h|--help]
+killport [-v|--version]
 ```
 #### Example (Windows Command Prompt)
 
