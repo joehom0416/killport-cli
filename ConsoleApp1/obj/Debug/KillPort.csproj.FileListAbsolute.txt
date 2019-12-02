@@ -4,3 +4,7 @@ E:\Github_Repo\killport\ConsoleApp1\obj\Debug\KillPort.csprojAssemblyReference.c
 E:\Github_Repo\killport\ConsoleApp1\obj\Debug\KillPort.csproj.CoreCompileInputs.cache
 E:\Github_Repo\killport\ConsoleApp1\obj\Debug\KillPort.exe
 E:\Github_Repo\killport\ConsoleApp1\obj\Debug\KillPort.pdb
+E:\Github_Repo\killport\ConsoleApp1\bin\Debug\KillPort.exe.manifest
+E:\Github_Repo\killport\ConsoleApp1\bin\Debug\KillPort.application
+E:\Github_Repo\killport\ConsoleApp1\obj\Debug\KillPort.exe.manifest
+E:\Github_Repo\killport\ConsoleApp1\obj\Debug\KillPort.application

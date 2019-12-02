@@ -21,7 +21,7 @@ namespace KillPort
 
                     case "-p":
                     case "--port":
-                        // Console.ReadKey();
+                     
                         if (args.Length >= (i + 1))
                         {
                             int port;
@@ -31,8 +31,9 @@ namespace KillPort
                                 {
                                    
                                     ProcessTaskKill.KillTask(p.ProcessId);
+                                    
                                 }
-
+                                i += 1;
                             }
                         }
                         break;
@@ -48,6 +49,8 @@ namespace KillPort
 
                 }
             }
+
+            Console.ReadKey();
         }
 
         private static void ShowVersion()

@@ -28,7 +28,7 @@ namespace KillPort
                 string exitStatus = proc.ExitCode.ToString();
                 if (exitStatus != "0")
                 {
-                    Console.WriteLine("taskkill command failed.   This may require elevated permissions.");
+                    Console.WriteLine("taskkill command failed. This may require elevated permissions.");
                 }
                 else
                 {

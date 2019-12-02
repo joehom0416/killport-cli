@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="KillPort.exe" version="1.0.0.0" publicKeyToken="4942b9083ae862b1" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="KillPort" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="KillPort.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KillPort.exe" size="11208">
+      <assemblyIdentity name="KillPort" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>4sEnhkxA4HlOkj5m09y2Tc0MDNE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=VIEWPOINT\joosueong.sum" issuerKeyHash="b7c7ed70bfb5f35f0ee9dc4a0991ef1968f5005b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>E8wt//1gAiTn0dNBPbWvXIyS0z4=</DigestValue></Reference></SignedInfo><SignatureValue>Zje4ZsfQkfZsRsI4YAXyQ4cGAKXs1zB0VugtuuystZHyHt9mWddiFx1F28DePnoY04JeWZ6BRaTHebLZKFGoCFqciDSMetzERxTjYkaG7Qq9CBs6KQN63Ico8oMf5HdtrelRysMzf47Zant8bax1CXCnzhlfvwgKIYoOrb1UhDk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wyFk/Mq3KStpDgZtKeUTkxLt6ijHw+7wUyLRS+zURhtxcfYR6jbDaeXxM6LRrjUMY7d9xkUFN17+ppTpkQk83v6K95o+SX686fNmoXQ+t/9tolaUDskCoLOmfgKX4pqnX2/7tiTa9/Idcsy7oAq283ojSQIzN7VFxa9Hi8Ytg9k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="3ed3928c5cafb53d41d3d1e7240260fdff2dcc13" Description="" Url=""><as:assemblyIdentity name="KillPort.exe" version="1.0.0.0" publicKeyToken="4942b9083ae862b1" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=VIEWPOINT\joosueong.sum</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fRCHZUYexeLpYLWdPOdk5CQ8CKE=</DigestValue></Reference></SignedInfo><SignatureValue>RG067SZXCsW6ggpzN/KB1r1ucVGFcvSk7DnNSPMqzIaj2+21OYiBxOtjqJz98SypzmVOlNK7vGwGfZziUaqT0XIBPNoyUoeXxAgUjIK7UwBWvZYd4dPT5f91pAOQ0plkGa5W0Hn+hE7s1euOh8dgvgrxURj0WMjVS7ocCbhHBvQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wyFk/Mq3KStpDgZtKeUTkxLt6ijHw+7wUyLRS+zURhtxcfYR6jbDaeXxM6LRrjUMY7d9xkUFN17+ppTpkQk83v6K95o+SX686fNmoXQ+t/9tolaUDskCoLOmfgKX4pqnX2/7tiTa9/Idcsy7oAq283ojSQIzN7VFxa9Hi8Ytg9k=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQU8Fko8n6xZ5Bh+7Mh+XjAjANBgkqhkiG9w0BAQUFADA5MTcwNQYDVQQDHi4AVgBJAEUAVwBQAE8ASQBOAFQAXABqAG8AbwBzAHUAZQBvAG4AZwAuAHMAdQBtMB4XDTE5MTIwMjA0NDc1OVoXDTIwMTIwMTEwNDc1OVowOTE3MDUGA1UEAx4uAFYASQBFAFcAUABPAEkATgBUAFwAagBvAG8AcwB1AGUAbwBuAGcALgBzAHUAbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwyFk/Mq3KStpDgZtKeUTkxLt6ijHw+7wUyLRS+zURhtxcfYR6jbDaeXxM6LRrjUMY7d9xkUFN17+ppTpkQk83v6K95o+SX686fNmoXQ+t/9tolaUDskCoLOmfgKX4pqnX2/7tiTa9/Idcsy7oAq283ojSQIzN7VFxa9Hi8Ytg9kCAwEAATANBgkqhkiG9w0BAQUFAAOBgQA+xhf6n6o8kM2rBu/PyC1dGi1gNaeAzyr1VxKxb0qYpTV4VEAfEeGWT2rWY3xdYWd1ZE2nk/KQKlj/RfOHNrH7X6FtuGDp7Oe3H3fwS2D0+sIDgXU06aGKRfU0SjE+XJl8w3/lqTsX+BwY1YNR2hiLR1w+yqAnespzOwoBZ3rk8Q==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
