@@ -8,12 +8,14 @@ namespace KillPort
 {
     public static class ProcessTaskKill
     {
+         const string failedMessage= "taskkill command failed. This may require elevated permissions.";
         /// <summary>
         /// Kill the process by process Id
         /// </summary>
         /// <param name="processId">Process Id</param>
-        public static void KillTask(int processId)
+        public static string KillTask(int processId)
         {
+            string result = "";
             using (Process proc = new Process())
             {
                 proc.StartInfo.FileName = "taskkill.exe";
@@ -26,15 +28,9 @@ namespace KillPort
                 //Get output and Error
                 string output = proc.StandardOutput.ReadToEnd() + proc.StandardError.ReadToEnd();
                 string exitStatus = proc.ExitCode.ToString();
-                if (exitStatus != "0")
-                {
-                    Console.WriteLine("taskkill command failed. This may require elevated permissions.");
-                }
-                else
-                {
-                    Console.WriteLine(output);
-                }
+                result = (exitStatus != "0") ? failedMessage : output;
             }
+            return result;
         }
     }
 }
