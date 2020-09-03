@@ -43,10 +43,14 @@ namespace KillPort
                                         Console.Write($"'{p.ProcessName}' (PID {p.ProcessId}) is using port number {p.PortNumber}. Confirm kill it (Y/N) ?");
                                         string input = Console.ReadLine();
                                         if (input.Equals("y", StringComparison.OrdinalIgnoreCase))
-                                        {
-                                            Console.WriteLine($"Port {p.PortNumber} has been killed.");
+                                        {      
+                                            Console.WriteLine(ProcessTaskKill.KillTask(p.ProcessId));
                                         }
-                                        Console.WriteLine(ProcessTaskKill.KillTask(p.ProcessId));
+                                        else
+                                        {
+                                            Console.WriteLine($"no one been killed.");
+                                        }
+                                      
                                     }
 
 

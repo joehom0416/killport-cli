@@ -1,0 +1,9 @@
+E:\Github_Repo\killport\KillPort\bin\Release\KillPort.exe.manifest
+E:\Github_Repo\killport\KillPort\bin\Release\KillPort.application
+E:\Github_Repo\killport\KillPort\bin\Release\KillPort.exe
+E:\Github_Repo\killport\KillPort\bin\Release\KillPort.pdb
+E:\Github_Repo\killport\KillPort\obj\Release\KillPort.csprojAssemblyReference.cache
+E:\Github_Repo\killport\KillPort\obj\Release\KillPort.exe.manifest
+E:\Github_Repo\killport\KillPort\obj\Release\KillPort.application
+E:\Github_Repo\killport\KillPort\obj\Release\KillPort.exe
+E:\Github_Repo\killport\KillPort\obj\Release\KillPort.pdb
