@@ -1,6 +1,12 @@
 # Killport CLI
 A Command Line Interface for kill the running process which currently using the port.
 
+## Setup
+```
+dotnet tool install --global killport.Cli.tool --version 1.0.0
+```
+
+
 ## Usage
 
 ```
