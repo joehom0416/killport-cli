@@ -1,21 +1,21 @@
-﻿using System;
+﻿using killport.Cli.tool.Models;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using KillPort.Models;
-namespace KillPort
+
+namespace killport.Cli.tool.Helper
 {
     public static class ProcessPorts
     {
-       /// <summary>
-       /// Get Process Name
-       /// </summary>
-       /// <param name="processId">Id of process</param>
-       /// <returns>Return nama of the process if the process is exist, otherwise return empty string.</returns>
+        /// <summary>
+        /// Get Process Name
+        /// </summary>
+        /// <param name="processId">Id of process</param>
+        /// <returns>Return nama of the process if the process is exist, otherwise return empty string.</returns>
         public static string GetProcessName(int processId)
         {
             string result = string.Empty;
@@ -23,10 +23,11 @@ namespace KillPort
             {
                 result = Process.GetProcessById(processId).ProcessName;
             }
-            catch {
-              //do nothing
+            catch
+            {
+                //do nothing
             }
-           
+
             return result;
         }
         /// <summary>
@@ -35,7 +36,7 @@ namespace KillPort
         /// <returns>Return as list of port</returns>
         public static List<Port> GetPorts()
         {
-            List<Port> result=new List<Port>();
+            List<Port> result = new List<Port>();
             try
             {
                 using (Process proc = new Process())
@@ -56,9 +57,9 @@ namespace KillPort
                         Console.WriteLine("NetStat command failed.   This may require elevated permissions.");
                     }
                     //get result, the result might be more than one row, split the rows
-                   
+
                     string[] rows = Regex.Split(output, "\r\n");
-                    foreach(string row in rows)
+                    foreach (string row in rows)
                     {
                         ///parttern:  UDP    10.0.75.1:1900         *:*                                    2932
                         ///1- protocol
@@ -98,10 +99,10 @@ namespace KillPort
             }
             catch (Exception ex)
             {
-                  Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message);
             }
             return result;
         }
-        
+
     }
 }

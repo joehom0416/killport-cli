@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace KillPort
+namespace killport.Cli.tool.Helper
 {
     public static class ProcessTaskKill
     {
-         const string failedMessage= "taskkill command failed. This may require elevated permissions.";
+        const string failedMessage = "taskkill command failed. This may require elevated permissions.";
         /// <summary>
         /// Kill the process by process Id
         /// </summary>

@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using killport.Cli.tool.Helper;
+using killport.Cli.tool.Models;
 using System.Reflection;
-using System.Text;
-using KillPort.Models;
 using System.Security.Principal;
-namespace KillPort
-{
-    class Program
-    {
 
+namespace killport.Cli.tool
+{
+    internal class Program
+    {
         static void Main(string[] args)
         {
 
@@ -43,14 +39,14 @@ namespace KillPort
                                         Console.Write($"'{p.ProcessName}' (PID {p.ProcessId}) is using port number {p.PortNumber}. Confirm kill it (Y/N) ?");
                                         string input = Console.ReadLine();
                                         if (input.Equals("y", StringComparison.OrdinalIgnoreCase))
-                                        {      
+                                        {
                                             Console.WriteLine(ProcessTaskKill.KillTask(p.ProcessId));
                                         }
                                         else
                                         {
                                             Console.WriteLine($"no one been killed.");
                                         }
-                                      
+
                                     }
 
 
@@ -127,6 +123,5 @@ Options:
             }
             return isElevated;
         }
-
     }
 }
